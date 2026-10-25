@@ -3,9 +3,28 @@
 # and allow the plugins properly work.
 # More info: https://book.kubebuilder.io/reference/project-config.html
 cliVersion: 4.16.0
-domain: art.kentester.xyz
+domain: art.local
 layout:
 - go.kubebuilder.io/v4
 projectName: art-operator
 repo: github.com/kendeljaworski/art-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: art.local
+  group: art
+  kind: Canvas
+  path: github.com/kendeljaworski/art-operator/api/v1
+  version: v1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: art.local
+  group: art
+  kind: Artist
+  path: github.com/kendeljaworski/art-operator/api/v1
+  version: v1
 version: "3"

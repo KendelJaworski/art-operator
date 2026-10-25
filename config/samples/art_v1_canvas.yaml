@@ -1,0 +1,9 @@
+apiVersion: art.art.local/v1
+kind: Canvas
+metadata:
+  labels:
+    app.kubernetes.io/name: art-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: canvas-sample
+spec:
+  # TODO(user): Add fields here

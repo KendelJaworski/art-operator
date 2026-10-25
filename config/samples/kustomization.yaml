@@ -1,0 +1,5 @@
+## Append samples of your project ##
+resources:
+- art_v1_canvas.yaml
+- art_v1_artist.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples
